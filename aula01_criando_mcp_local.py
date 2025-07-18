@@ -6,7 +6,7 @@ servidor_mcp = FastMCP('mcp-busca-wikipedia')
 
 
 @servidor_mcp.tool()
-async def buscar_wikipedia(busca: str) -> str:
+async def buscar_wikipedia_remoto(busca: str) -> str:
     return wikipedia.summary(busca)
 
 
